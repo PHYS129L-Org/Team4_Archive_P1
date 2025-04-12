@@ -1,0 +1,20 @@
+  538  grep -r --exclude="grep_stat_all.txt" "statistics" . > cache/images/grep_stat_all.txt
+  539  cat cache/images/grep_stat_all.txt
+  540  find . -type f -name "*.txt" > test/basic/test_3.txt
+  541  find . -name "*.txt" -exec grep "statistics" {} \;
+  542  cd ..
+  543  tar -czvf p1_basic_unix.tar.gz p1_basic_unix/
+  544  sha256sum p1_basic_unix.tar.gz > sha25sum_problem_set.txt
+  545  mkdir Archive_P1
+  546  cd Archive_P1
+  547  git int
+  548  git init
+  549  cp ../p1_basic_unix.tar.gz .
+  550  cp ../sha25sum_problem_set.txt .
+  551  git add .
+  552  git commit -m "Problem 1 submission"
+  553  git remote add origin https://github.com/ShuoWang-00/Archive_P1.git
+  554  git branch -M main
+  555  git push -u origin main
+  556  history | tail -n 20 >> p1_basic_unix/P1_cmd_history.txt
+  557  history | tail -n 20 >> P1_cmd_history.txt
