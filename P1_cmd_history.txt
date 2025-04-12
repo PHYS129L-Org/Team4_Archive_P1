@@ -18,3 +18,53 @@
   555  git push -u origin main
   556  history | tail -n 20 >> p1_basic_unix/P1_cmd_history.txt
   557  history | tail -n 20 >> P1_cmd_history.txt
+  512  cd /home
+  513  cd p1_basic_unox
+  514  cd p1_basic_unix
+  515  wget /root/Desktop/host/P1_B/tar.gz
+  516  wget https://root/Desktop/host/P1_B.tar.gz
+  517  wget https://zhwangs.github.io/UCSB-comp-phys/data/problem_set/P1_B.tar.gz
+  518  sha256sum P1_B.tar.gz
+  519  tar -xvf P1_B.tar.gz
+  520  mv P1_B/example.sh
+  521  mv P1_B/example.sh ./
+  522  mv P1_B/example1.txt P1_B/demo_1.txt
+  523  mv P1_B/example2.txt P1_B/demo_2.txt
+  524  mv P1_B/demo_1/txt src/exe/
+  525  mv P1_B/demo_1.txt src/exe/
+  526  mv P1_B/demo_2.txt cache/data/tables/
+  527  rm -rf P1_B
+  528  ln -s src/exe/demo_1.txt demo_link
+  529  alias ll="ls -l"
+  530  grep "statistics" src/exe/demo_1.txt > src/utilities/grep_stat_demo1.txt
+  531  grep -r "statistic" . > cache/images/grep_stat_all.txt
+  532  grep -r "statistic" . > cache/image/grep_stat_all.txt
+  533  grep -r "statistics" . > cache/images/grep_stat_all.txt
+  534  mkdir -p cache/images
+  535  mkdir -p cache/history
+  536  mkdir -p cache/data/directory_list
+  537  grep -r "statistics" .> cache/images/grep_stat_all.txt
+  538  grep -r --exclude="grep_stat_all.txt" "statistics" . > cache/images/grep_stat_all.txt
+  539  cat cache/images/grep_stat_all.txt
+  540  find . -type f -name "*.txt" > test/basic/test_3.txt
+  541  find . -name "*.txt" -exec grep "statistics" {} \;
+  542  cd ..
+  543  tar -czvf p1_basic_unix.tar.gz p1_basic_unix/
+  544  sha256sum p1_basic_unix.tar.gz > sha25sum_problem_set.txt
+  545  mkdir Archive_P1
+  546  cd Archive_P1
+  547  git int
+  548  git init
+  549  cp ../p1_basic_unix.tar.gz .
+  550  cp ../sha25sum_problem_set.txt .
+  551  git add .
+  552  git commit -m "Problem 1 submission"
+  553  git remote add origin https://github.com/ShuoWang-00/Archive_P1.git
+  554  git branch -M main
+  555  git push -u origin main
+  556  history | tail -n 20 >> p1_basic_unix/P1_cmd_history.txt
+  557  history | tail -n 20 >> P1_cmd_history.txt
+  558  git add P1_cmd_history.txt
+  559  git commit -m "Add history"
+  560  git push -u origin main
+  561  history | tail -n 50 >> P1_cmd_history.txt
