@@ -183,15 +183,14 @@
   183  git push origin feature_branch
   184  git checkout main
   185  git merge feature_branch
-  186  mkdir "Problem 3"
-  187  cd "Problem 3"
-  188  nano convert.sh
-  189  vi convert.sh
-  190  cd Problem 3
-  191  cd "Problem 3"
-  192  vi convert.sh
-  193  cd "Problem 3"
-  194  ./convert.sh
-  195  cat "convertion result.txt"
-  196  history
-  197  history>history.txt
+  186  git commit -m "hello world README"
+  187  cd git-example
+  188  git checkout feature_branch
+  189  git commit -m "hello world README"
+  190  git push origin feature_branch
+  191  git checkout main
+  192  git merge feature_branch
+  193  git push origin main
+  194  git pull origin main
+  195  cat README.md
+  196  history > history.txt
